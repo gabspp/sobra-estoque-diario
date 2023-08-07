@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contagem de Estoque</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="container">
+            <h1>Contagem de Estoque</h1>
+            <input type="date" name="data" id="data">
+            
+            <div class="label-embalado-vitrine">
+               <span class="label-embalados">Embalados</span>
+               <span class="label-vitrine">Vitrine</span>
+            </div>
+            <form action="" method="post">
+
+                <div class="label-paes">
+                    <label for="quantidade-dl">Doce de Leite Com Nozes</label>                    
+                    <label for="quantidade-car">Caramelo Salgado</label>                    
+                    <label for="quantidade-caju">Cajutella</label>                    
+                    <label for="quantidade-lar">Laranja</label>                    
+                    <label for="quantidade-mar">Maracujá</label>                   
+                    <label for="quantidade-sr">Sem Recheio</label>
+                    <label for="quantidade-esp-mes">Especial do Mês</label>
+                </div>
+
+                
+
+                <div class="col-embalados">
+                    <input type="number" max= "200" value="0" name="Doce de Leite Com Nozes" id="quantidade-dl">
+                    <input type="number" max= "200" value="0" name="Caramelo Salgado" id="quantidade-car">
+                    <input type="number" max= "200" value="0" name="Cajutella" id="quantidade-caju">
+                    <input type="number" max= "200" value="0" name="Laranja" id="quantidade-lar">
+                    <input type="number" max= "200" value="0" name="Maracujá" id="quantidade-mar">
+                    <input type="number" max= "200" value="0" name="Sem Recheio" id="quantidade-sr">
+                    <input type="number" max= "200" value="0" name="Especial do Mês" id="quantidade-esp-mes">
+    
+                </div>
+
+                <div class="col-vitrine">
+                    <input type="number" value="0" name="Doce de Leite Com Nozes - Vitrine" id="quantidade-dl-vitrine">
+                    <input type="number" value="0" name="Caramelo Salgado - Vitrine" id="quantidade-car-vitrine">
+                    <input type="number" value="0" name="Cajutella - Vitrine" id="quantidade-caju-vitrine">
+                    <input type="number" value="0" name="Laranja - Vitrine" id="quantidade-lar-vitrine">
+                    <input type="number" value="0" name="Maracujá - Vitrine" id="quantidade-mar-vitrine">
+                    <input type="number" value="0" name="Sem Recheio - Vitrine" id="quantidade-sr-vitrine">
+                    <input type="number" value="0" name="Especial do Mês - Vitrine" id="quantidade-esp-mes-vitrine">
+    
+
+                </div>
+            </form>
+            <button id="btn-enviar" type="button">Enviar</button>
+        </div>
+    </div>
+
+    <div class="output">
+        <div class="output-quantidade"></div>
+        <div class="output-quantidade-vitrine"></div>
+    </div>
+    <div class="output-data"></div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
